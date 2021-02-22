@@ -1,7 +1,7 @@
 import sys
 import time
 
-print('Generating full prime List up to 1000000')
+print('Generating full prime List up to 10000000')
 start_time=time.time()
 primeList=[]
 def SieveOfEratosthenes(n):
@@ -19,7 +19,7 @@ def SieveOfEratosthenes(n):
         if prime[p]:
             primeList.append(p)
     return primeList
-primeList=SieveOfEratosthenes(1000000)
+primeList=SieveOfEratosthenes(10000000)
 end_time=time.time()
 time_lapsed=end_time - start_time
 #print(primeList)
